@@ -3,7 +3,7 @@
 client_id = "61aa85eb4f980120f1275c083bc31149"
 name = "image-banner-extension"
 handle = "image-banner-extension-1"
-application_url = "https://d-wallace-quarters-tool.trycloudflare.com"
+application_url = "https://harm-meals-usc-northern.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://d-wallace-quarters-tool.trycloudflare.com/auth/callback",
-  "https://d-wallace-quarters-tool.trycloudflare.com/auth/shopify/callback",
-  "https://d-wallace-quarters-tool.trycloudflare.com/api/auth/callback"
+  "https://harm-meals-usc-northern.trycloudflare.com/auth/callback",
+  "https://harm-meals-usc-northern.trycloudflare.com/auth/shopify/callback",
+  "https://harm-meals-usc-northern.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

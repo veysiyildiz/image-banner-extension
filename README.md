@@ -43,19 +43,19 @@ pnpm install
 Using yarn:
 
 ```shell
-yarn dev -- --reset
+yarn dev
 ```
 
 Using npm:
 
 ```shell
-npm run dev -- --reset
+npm run dev
 ```
 
 Using pnpm:
 
 ```shell
-pnpm run dev -- --reset
+pnpm run dev
 ```
 
 Press P to open the URL to your app. Once you click install, you can start development.
