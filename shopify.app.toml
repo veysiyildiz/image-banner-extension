@@ -3,7 +3,7 @@
 client_id = "61aa85eb4f980120f1275c083bc31149"
 name = "image-banner-extension"
 handle = "image-banner-extension-1"
-application_url = "https://intelligence-arm-tribunal-hay.trycloudflare.com"
+application_url = "https://d-wallace-quarters-tool.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://intelligence-arm-tribunal-hay.trycloudflare.com/auth/callback",
-  "https://intelligence-arm-tribunal-hay.trycloudflare.com/auth/shopify/callback",
-  "https://intelligence-arm-tribunal-hay.trycloudflare.com/api/auth/callback"
+  "https://d-wallace-quarters-tool.trycloudflare.com/auth/callback",
+  "https://d-wallace-quarters-tool.trycloudflare.com/auth/shopify/callback",
+  "https://d-wallace-quarters-tool.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
