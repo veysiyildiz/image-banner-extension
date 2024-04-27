@@ -1,0 +1,72 @@
+<link rel="stylesheet" type="text/css" href="{{ 'image-banner.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'swiper-bundle.min.css' | asset_url }}">
+
+<section class="banner-wrapper">
+  <div class="banner-section">
+    <h3 class="banner-title">{{ block.settings.title }}</h3>
+    <a class="button button-primary" href="{{ block.settings.product.url }}"
+      >Shop Now
+      <img
+        class="chevron"
+        src="{{ 'ChevronRight.svg' | asset_url | image_url: '16x' }}"
+        width="16"
+        height="16"
+        alt="Shop Now"
+      >
+    </a>
+    {{ block.settings.main_image | image_url: width: 400 | image_tag: class: 'main-image desktop' }}
+  </div>
+  <div class="mobile">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div
+            class="product-image"
+            style="background-image: url({{ block.settings.product_image | image_url }})"
+          >
+            <a href="{{ block.settings.product.url }}">{% render 'product-card', product: block.settings.product %}</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          {{ block.settings.main_image | image_url: width: 400 | image_tag: class: 'main-image mobile' }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner-section">
+    <div
+      class="product-image desktop"
+      style="background-image: url({{ block.settings.product_image | image_url }})"
+    >
+      <a href="{{ block.settings.product.url }}">{% render 'product-card', product: block.settings.product %}</a>
+    </div>
+    <p class="banner-description">{{ block.settings.description }}</p>
+    <a class="link button-text" href="{{ block.settings.link }}">Read More</a>
+  </div>
+</section>
+
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+<script src="{{ 'javascript.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Image Banner",
+  "target": "section",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Title" },
+    { "type": "text", "id": "description", "label": "Description", "default": "Description" },
+    { "type": "text", "id": "link", "label": "Link" },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    { "type": "product", "id": "product", "label": "product" }
+  ]
+}
+{% endschema %}

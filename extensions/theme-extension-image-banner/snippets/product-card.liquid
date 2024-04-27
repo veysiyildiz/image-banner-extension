@@ -1,0 +1,7 @@
+<div class="product-card">
+  <div class="desktop">
+    <span class="product-name">{{ product.title }}</span>
+    <span class="price">{{ product.price | money }}</span>
+  </div>
+  {{ product.images.first | image_url: width: 120 | image_tag: class: 'product-card-image' }}
+</div>

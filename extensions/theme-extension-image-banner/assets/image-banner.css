@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('https://vanila-carousel-section.vercel.app/assets/AvenirLTStd-Black-DMp7hZ5A.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('https://vanila-carousel-section.vercel.app/assets/AvenirLTStd-Book-CaHpovFe.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Pro';
+  src: url('https://vanila-carousel-section.vercel.app/assets/ITCAvantGardeGothicPro-Bold-BsJ2z-IO.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 32px;
+    padding: 80px 0px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  h3.banner-title {
+    font-family: ITC Avant Garde Gothic Pro;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32.5px;
+    text-align: left;
+    padding: 0;
+    margin: 0 0 24px 0;
+    color: #000;
+  }
+
+  .banner-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    .button {
+      font-size: 10.24px;
+      font-weight: 700;
+      line-height: 16.79px;
+      letter-spacing: 1px;
+      text-align: left;
+      padding: 16px;
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      .chevron {
+        margin-left: 12px;
+      }
+    }
+
+    .banner-description {
+      font-family: Avenir;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25.6px;
+      text-align: left;
+      color: #666666;
+      margin: 0 0 24px 0;
+    }
+
+    .link {
+      font-family: Avenir;
+      font-size: 12.8px;
+      font-weight: 900;
+      line-height: 17.48px;
+      text-align: left;
+      color: #000;
+    }
+  }
+
+  .main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .product-image {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    aspect-ratio: 998 / 1138;
+  }
+
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card {
+    height: 72px;
+    bottom: 40px;
+    right: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    text-align: left;
+
+    .product-name {
+      font-family: Avenir;
+      font-size: 12.8px;
+      font-weight: 900;
+      line-height: 17.48px;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+
+    span {
+      font-family: Avenir;
+      font-size: 12.8px;
+      font-weight: 400;
+      line-height: 20.48px;
+      text-align: left;
+      color: #666666;
+    }
+
+    img.product-card-image {
+      width: auto;
+      height: 62px;
+      padding: 5px;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+
+    .banner-section {
+      .button {
+        margin: 0 0 96px 68px;
+        font-size: 12.8px;
+        font-weight: 900;
+        line-height: 17.48px;
+      }
+
+      .link {
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 21.86px;
+        margin: 0 0 0 56px;
+      }
+
+      .banner-description {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        margin: 96px 0 24px 56px;
+      }
+    }
+
+    h3.banner-title {
+      font-family: ITC Avant Garde Gothic Pro;
+      font-size: 39.06px;
+      font-weight: 700;
+      line-height: 50.78px;
+      text-align: left;
+      padding: 68px 0px 0px 68px;
+    }
+
+    .product-card {
+      width: 240px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+      }
+
+      img.product-card-image {
+        width: auto;
+        height: 100%;
+      }
+    }
+    .banner-wrapper {
+      flex-direction: row;
+      gap: 32px;
+      padding: 80px 0px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .product-card {
+      width: 281px;
+    }
+    .banner-wrapper {
+      gap: 64px;
+      padding: 120px 0px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .product-card {
+      width: 291px;
+    }
+    .banner-wrapper {
+      gap: 128px;
+      padding: 160px 0px;
+    }
+  }
+
