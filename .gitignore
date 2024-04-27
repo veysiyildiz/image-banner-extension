@@ -13,3 +13,5 @@ database.sqlite
 .env
 package-lock.json
 yarn.lock
+shopify.app.banner-image.toml
+shopify.app.image-banner-extension.toml
