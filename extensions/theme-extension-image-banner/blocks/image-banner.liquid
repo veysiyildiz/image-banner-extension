@@ -4,14 +4,14 @@
 <section class="banner-wrapper">
   <div class="banner-section">
     <h3 class="banner-title">{{ block.settings.title }}</h3>
-    <a class="button button-primary" href="{{ block.settings.product.url }}"
-      >Shop Now
+    <a class="button button-primary" href="{{ block.settings.product.url }}">
+      {{ 'image_banner.shop_now' | t }}
       <img
         class="chevron"
         src="{{ 'ChevronRight.svg' | asset_url | image_url: '16x' }}"
         width="16"
         height="16"
-        alt="Shop Now"
+        alt="{{ 'image_banner.shop_now' | t }}"
       >
     </a>
     {{ block.settings.main_image | image_url: width: 400 | image_tag: class: 'main-image desktop' }}
@@ -41,7 +41,7 @@
       <a href="{{ block.settings.product.url }}">{% render 'product-card', product: block.settings.product %}</a>
     </div>
     <p class="banner-description">{{ block.settings.description }}</p>
-    <a class="link button-text" href="{{ block.settings.link }}">Read More</a>
+    <a class="link button-text" href="{{ block.settings.link }}">{{ 'image_banner.read_more' | t }}</a>
   </div>
 </section>
 

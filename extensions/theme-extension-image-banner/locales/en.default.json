@@ -1,10 +1,6 @@
 {
-  "ratings": {
-    "stars": {
-      "label": "Ratings"
-    },
-    "home": {
-      "recommendationText": "Recommended Product!"
-    }
+  "image_banner": {
+    "shop_now": "Shop Now",
+    "read_more": "Read More"
   }
 }
